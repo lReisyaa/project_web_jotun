@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - Toko Cat Jotun</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .produk-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+        }
+        .produk-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .produk-card:hover {
+            transform: translateY(-5px);
+        }
+        .produk-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .produk-info {
+            padding: 20px;
+        }
+        .produk-info h3 {
+            margin-bottom: 10px;
+        }
+        .produk-info .harga {
+            color: #cc0000;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .produk-info .stok {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+        .stok-tersedia {
+            background: #d4edda;
+            color: #155724;
+        }
+        .stok-habis {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .page-title {
+            padding: 120px 0 30px;
+            text-align: center;
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar sama seperti index.html -->
+    
+    <section class="page-title">
+        <div class="container">
+            <h1>Produk Cat Jotun</h1>
+            <p>Kualitas terbaik untuk hunian Anda</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="produk-grid">
+                <div class="produk-card">
+                    <img src="https://via.placeholder.com/300x200?text=Jotun+Interior" alt="Jotun Interior">
+                    <div class="produk-info">
+                        <h3>Jotun Majestic Brilliant</h3>
+                        <p>Cat interior premium dengan kilau elegan</p>
+                        <div class="harga">Rp 450.000</div>
+                        <span class="stok stok-tersedia">✓ Stok Tersedia</span>
+                    </div>
+                </div>
+                <div class="produk-card">
+                    <img src="https://via.placeholder.com/300x200?text=Jotun+Exterior" alt="Jotun Exterior">
+                    <div class="produk-info">
+                        <h3>Jotun Weatherguard</h3>
+                        <p>Cat eksterior tahan cuaca dan UV</p>
+                        <div class="harga">Rp 520.000</div>
+                        <span class="stok stok-tersedia">✓ Stok Tersedia</span>
+                    </div>
+                </div>
+                <div class="produk-card">
+                    <img src="https://via.placeholder.com/300x200?text=Jotun+Wood" alt="Jotun Wood">
+                    <div class="produk-info">
+                        <h3>Jotun Wood Care</h3>
+                        <p>Cat kayu anti rayap dan cuaca</p>
+                        <div class="harga">Rp 380.000</div>
+                        <span class="stok stok-habis">✗ Stok Habis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer sama seperti index.html -->
+    <script src="js/script.js"></script>
+</body>
+</html>
